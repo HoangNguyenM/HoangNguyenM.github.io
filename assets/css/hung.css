@@ -1,0 +1,379 @@
+/* General */
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    min-width: 375px;
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.side-header .logo-wrapper {
+    min-width: 195px;
+}
+
+.side-header .ol-user-profile {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.side-header .ol-user-profile .avatar {
+    width: 125px;
+    height: 125px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.side-header .ol-user-profile .title {
+    font-family: 'Lato', sans-serif;
+    font-size: 28px !important;
+    font-weight: 300;
+}
+
+.side-header .ol-user-profile .subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px !important;
+    font-weight: 300;
+}
+
+ul#primary-menu li a {
+    font-family: 'Lato',sans-serif;
+    font-size: 13px !important;
+    font-weight: bold;
+}
+
+ul#primary-menu .sub-menu li a {
+    font-family: 'Lato',sans-serif;
+    font-size: 11px !important;
+    font-weight: bold;
+}
+
+#side-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #202020;
+    border-top: 1px solid #1A1A1A;
+    text-align: center;
+    overflow: hidden;
+}
+
+#side-footer .social-icons {
+    margin-bottom: 5px;
+}
+
+#side-footer .social-icons.size-large a {
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+}
+
+#side-footer #copyright {
+    font-size: 13px !important;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.page-head {
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+.page-contents .link-blue a {
+    color: #428bca;
+}
+
+.page-contents .link-black a {
+    color: #000000;
+}
+
+ul.with-shaded-label li {
+    margin-bottom: 25px;
+}
+
+ul.with-shaded-label li .title {
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding-top: 18px;
+}
+
+ul.with-shaded-label li .description, ul.with-shaded-label li .description p {
+    line-height: 16px;
+    font-size: 14px;
+}
+
+@media (max-width: 450px) {
+    .icon-box.ib-v4 .oli {
+        display: none;
+    }
+
+    .icon-box.ib-v4 .title {
+        margin-left: 0px !important;
+    }
+
+    .icon-box.ib-v4 p {
+        margin-left: 0px !important;
+    }
+
+    .pub-item.with-icon .elem-wrapper {
+        display: none;
+    }
+
+    .pub-item.with-icon .content-wrapper {
+        margin-left: 0px !important;
+    }
+}
+
+.oli-upenn:before {
+    content: url('../img/logo/upenn.png');
+}
+
+.oli-psu:before {
+    content: url('../img/logo/psu.png');
+}
+
+.oli-hcmut:before {
+    content: url('../img/logo/hcmut.png');
+}
+
+.pub-item {
+    padding-bottom: 15px;
+}
+
+.pub-item .title {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.pub-item .description .citation, .pub-item .description .citation a {
+    max-width: 90%;
+}
+.pub-item .description .citation {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 450px) {
+    .address-block {
+        padding-left: 100px!important;
+    }
+}
+
+#footer #footer-main {
+    padding: 60px 0;
+}
+
+@media (max-height: 700px) {
+    #side-footer {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .page-head {
+        height: 150px;
+    }
+
+    .side-header .head-main {
+        line-height: 80px;
+    }
+
+    .side-header #header .logo-wrapper {
+        width: 50%;
+        max-width: none;
+        margin-top: 0;
+    }
+
+    .side-header .ol-user-profile {
+        padding: 0;
+        text-align: left;
+    }
+
+    .side-header .ol-user-profile .avatar {
+        margin: 0;
+        width: auto;
+        height: auto;
+        float: left;
+    }
+
+    .side-header .ol-user-profile .avatar img {
+        width: 50px;
+        height: auto;
+        max-height: none;
+    }
+
+    .side-header .ol-user-profile .title {
+        margin-left: 60px;
+        font-size: 18px !important;
+        font-weight: bold;
+        line-height: 80px;
+    }
+
+    .side-header .ol-user-profile .subtitle {
+        display: none;
+    }
+
+    .header-bg {
+        display: none;
+    }
+
+    #side-footer {
+        display: none;
+    }
+}
+
+/* Timeline */
+
+.ol-agenda .ag-section .section-head {
+    background-color: #6c6f76;
+    padding: 0 30px;
+}
+
+.ol-agenda .ag-section:nth-child(2n+1) .section-head {
+    background-color: #7f8389;
+}
+
+.ol-agenda .ag-section .section-body .item {
+    padding: 25px 50px;
+}
+
+.ol-agenda .ag-section .section-head .date.with-shaded-label {
+    margin-top: 20px;
+}
+
+.ol-agenda .ag-section .section-head .date.with-shaded-label.no-month {
+    margin-top: 50px;
+}
+
+.ol-agenda .ag-section .section-body .contents .extra-description {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.ol-agenda .ag-section .section-body .contents .subtitle {
+    font-family: 'Lato',sans-serif;
+    font-size: 12px;
+    font-style: italic;
+}
+
+@media (max-width: 992px) {
+    .ol-agenda .ag-section .section-head {
+        width: 100px;
+        padding: 0px 5px;
+    }
+
+    .ol-agenda .ag-section .section-head .date.with-shaded-label {
+        margin-top: 20px;
+    }
+
+    .ol-agenda .ag-section .section-head .date.with-shaded-label.no-month {
+        margin-top: 35px;
+    }
+
+    .ol-agenda .ag-section .section-head .date.with-shaded-label .shaded-label {
+        font-size: 39px;
+    }
+
+    .ol-agenda .ag-section .section-body {
+        padding-left: 100px;
+    }
+
+    .ol-agenda .ag-section .section-body .item {
+        padding: 30px 15px;
+    }
+
+    .ol-agenda .ag-section .section-body .contents .extra-description {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 450px) {
+    .ol-agenda .ag-section .section-head {
+        width: 56px;
+        padding: 0px 5px;
+    }
+
+    .ol-agenda .ag-section .section-head .date.with-shaded-label {
+        margin-top: 10px;
+    }
+
+    .ol-agenda .ag-section .section-head .date.with-shaded-label.no-month {
+        margin-top: 30px;
+    }
+
+    .ol-agenda .ag-section .section-head .date.with-shaded-label .shaded-label {
+        font-size: 20px;
+    }
+
+    .ol-agenda .ag-section .section-body {
+        padding-left: 56px;
+    }
+
+    .ol-agenda .ag-section .section-body .item {
+        padding: 20px 15px;
+    }
+
+    .ol-agenda .ag-section .section-body .contents .extra-description {
+        font-size: 13px;
+    }
+}
+
+/* Grid */
+
+.book-el, .course-el {
+    border-bottom: 4px solid #6c6f76;
+}
+
+/* Page Specific: Projects */
+.height-project {
+    height: 150px !important;
+}
+
+/* Page Specific: Awards */
+
+.ol-agenda .footnote {
+    position: absolute;
+    right: 10px;
+    top: -50px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Play,sans-serif;
+}
+
+.ol-agenda .ag-section .section-body .contents.no-info {
+    margin-left: 0px;
+}
+
+/* Page Specific: Galleries */
+.page-head.no-bottom {
+    border-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.ol-grid-filters .default-filters li a {
+    color: #d6d6d6;
+}
+
+/* Video Wrapper */
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
