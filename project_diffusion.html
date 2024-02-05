@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Content-Type-Script" content="text/javascript">
+  <meta name="Content-Type-Style" content="text/css">
+  <link rel="shortcut icon" href="favicon.png">
+  <link href="assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/styles.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/hung.min.css" rel="stylesheet" type="text/css">
+  <script src="assets/js/vendors/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="https://www.linkedin.com/in/hoang-nguyen-m/" rel="author">
+  <script type="text/javascript">
+    var loc = window.location.href+'';
+    if (loc.indexOf('http://')==0) {
+      window.location.href = loc.replace('http://','https://');
+    }
+  </script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-83297455-1', 'auto');
+    ga('send', 'pageview');
+
+    var trackOutboundLink = function(url) {
+      ga('send', 'event', 'outbound', 'click', url, {
+        'transport': 'beacon',
+        'hitCallback': function(){window.open(url);}
+      });
+    }
+  </script>
+
+  <title>Score-Based Generative Models</title>
+  <meta name="description" itemprop="description" content="GAN Research">
+</head>
+<body class="fullwidth side-header slim-container">
+<div id="wrapper" class="regular-layout">
+  <header id="header" class=" dark">
+    <div class="head-main">
+      <div class="container">
+        <div class="logo-wrapper">
+          <div class="ol-user-profile"><a href="index.html" class="avatar"><img src="assets/img/avatar.jpg"></a>
+            <h1 class="title">Hoang Nguyen</h1>
+            <h2 class="subtitle">Florida State University</h2>
+          </div>
+        </div>
+        <ul id="primary-menu">
+          <li class="current-menu-item"><a href="index.html" title="About Me"><span>About Me</span></a></li>
+          <li><a href="pubs.html" title="Publications"><span>Publications</span></a></li>
+          <li><a href="projects.html" title="Academic Projects"><span>Projects</span></a></li>
+          <li><a href="activities.html" title="Activities"><span>Certifications</span></a></li>
+          <li><a href="awards.html" title="Honors & Awards"><span>Honors & Awards</span></a></li>
+        </ul>
+        <div class="header-icons">
+          <div class="ol-mobile-trigger hamburger hamburger--elastic">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="side-footer">
+      <ul class="social-icons size-large skin-white">
+        <li><a target="_blank" href="https://www.linkedin.com/in/hoang-nguyen-m/">
+          <i class="fa fa-linkedin"></i></a></li>
+        <li><a target="_blank" href="https://github.com/HoangNguyenM">
+          <i class="fa fa-github"></i></a></li>
+      </ul>
+      <div id="copyright">Hoang Nguyen &copy; 2024</div>
+    </div>
+    <div data-img-src="assets/img/bg/03.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+  </header>
+
+  <section id="contents">
+    <div class="page-head lined bg-white shadow-line ol-particles">
+      <div class="container">
+        <div class="tb-vcenter-wrapper">
+          <div class="title-wrapper vcenter">
+            <h1 class="title">Score-Based Generative Models</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="page-contents">
+      <section id="main-area">
+        <div class="container p-bottom-50 link-black">
+          <div class="row">
+            <div class="col-md-12">
+              <p>My academic research has been centered around the development and enhancement of diffusion models in deep learning, especially in the context of computer vision and non-convex optimization. My main work focuses on Score-Based Generative Models, a recent class of deep generative models with state-of-the-art performance in many applications including images and audio generations. In this model, we add noise to the original data via a forward process determined by a stochastic differential equation (SDE), then reverse this process by denoising the results to produce synthetic data. The idea was inspired by the existing score-based models using critically-damped Langevin Dynamics.</p>
+              <h6 class="with-underline">Ongoing project</h6>
+              <p>I am currently working on a higher order version of score-based model, where I apply an SDE of three dimensions in both the forward and backward process. In this project, I and my co-authors have figured the optimal choice for the coefficients of the SDE.</p>
+              <p>Some of my potential future projects on score-based models include:
+                <ul>
+                  <li>Denoising Diffusion Bridge Models</li>
+                  <li>Flow Matching for Generative Modeling</li>
+                  <li>Text-to-image using score-based models</li>
+                </ul>
+              </p>
+              <h6 class="with-underline">Wasserstein Convergence Guarantees for a General Class of Score-Based Generative Models (published)</h6>
+              <a target="_blank" href="https://arxiv.org/abs/2311.11003" class="link-with-icon"><i class="fa fa-external-link"></i>arxiv</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a target="_blank" href="https://github.com/HoangNguyenM/score-based-model-w-new-SDE" class="link-with-icon"><i class="fa fa-external-link"></i>github</a>
+              <p>Due to the existence of many families and many orders of SDE that can serve the forward process, I and my co-authors have explored these potential options to further improve the models. This results in my publication of “Wasserstein Convergence Guarantees for a General Class of Score-Based Generative Models”, which shows our joint theoretical analysis of the models and my implementation of new SDEs.</p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
+
+</div>
+<script src="assets/js/vendors/vendors.js"></script>
+<script src="assets/js/custom.min.js"></script>
+</body>
+</html>
